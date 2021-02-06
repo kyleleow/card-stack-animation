@@ -14,7 +14,7 @@
   left: 0;
   background: rgb(240, 240, 240);
   transition: background 2s ease;
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
 /* During hover & active state */
