@@ -25,7 +25,9 @@
 .stack:hover .card,
 .stack:active .card,
 .stack:hover .card:hover,
-.stack:active .card:active {
+.stack:active .card:active,
+.card:hover,
+.card:active {
   --bg-opacity: 5%;
   transition-duration: 2s;
   transition-timing-function: var(--easeInOutCirc);
@@ -36,7 +38,9 @@
 .stack:hover .card:nth-child(1),
 .stack:active .card:nth-child(1),
 .stack:hover .card:nth-child(1):hover,
-.stack:active .card:nth-child(1):active {
+.stack:active .card:nth-child(1):active,
+.card:nth-child(1):hover,
+.card:nth-child(1):active {
   --z-offset: 55vh;
 }
 
@@ -96,7 +100,9 @@
 .stack:hover .card.content,
 .stack:active .card.content,
 .stack:hover .card.content:hover,
-.stack:active .card.content:active {
+.stack:active .card.content:active,
+.card.content:hover,
+.card.content:active {
   background: transparent;
   color: white;
   border-color: transparent;
