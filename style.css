@@ -33,27 +33,27 @@
 
 .stack:hover .card:nth-child(1),
 .stack:active .card:nth-child(1) {
-  --z-offset: 75vh;
+  --z-offset: 55vh;
 }
 
 .stack:hover .card:nth-child(2),
 .stack:active .card:nth-child(2) {
-  --z-offset: 50vh;
+  --z-offset: 30vh;
 }
 
 .stack:hover .card:nth-child(3),
 .stack:active .card:nth-child(3) {
-  --z-offset: 25vh;
+  --z-offset: 5vh;
 }
 
 .stack:hover .card:nth-child(4),
 .stack:active .card:nth-child(4) {
-  --z-offset: 0vh;
+  opacity: 0;
 }
 
 .stack:hover .card:nth-child(5),
 .stack:active .card:nth-child(5) {
-  --z-offset: -25vh;
+  opacity: 0;
 }
 
 .stack:hover .card:nth-child(1)::after,
@@ -130,7 +130,7 @@
   --easeInOutCirc: cubic-bezier(0.85, 0, 0.15, 1);
   --bg-opacity: 0%;
 
-  transition: transform 4s ease;
+  transition: transform 4s ease, opacity 4s ease 0.3s;
 
   width: 40vmin;
   height: 40vmin;
@@ -431,7 +431,8 @@
 
 .card.background {
   z-index: 2;
-  transition: background-color 4s ease 0.3s, transform 4s ease 0.3s;
+  opacity: 1;
+  transition: background-color 4s ease 0.3s, transform 4s ease 0.3s, opacity 4s ease 0.3s;
 }
 
 .card.background::after {
@@ -441,7 +442,8 @@
 .card.box-shadow {
   z-index: 1;
   background: transparent;
-  transition: box-shadow 4s ease 0.4s, transform 4s ease 0.4s;
+  opacity: 1;
+  transition: box-shadow 4s ease 0.4s, transform 4s ease 0.4s, opacity 4s ease 0.3s;
 
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
     0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
