@@ -1,4 +1,4 @@
-# card-stack-animation
+# Watermelon Anatomy
 Demo: [Link](https://kyleleow.github.io/card-stack-animation)
 
-Animate card element on top of each other
+Animate card element to display anatomy of the fruit
