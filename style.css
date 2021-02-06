@@ -33,27 +33,17 @@
 
 .stack:hover .card:nth-child(1),
 .stack:active .card:nth-child(1) {
-  --z-offset: 75vh;
+  --z-offset: 55vh;
 }
 
 .stack:hover .card:nth-child(2),
 .stack:active .card:nth-child(2) {
-  --z-offset: 50vh;
+  --z-offset: 30vh;
 }
 
 .stack:hover .card:nth-child(3),
 .stack:active .card:nth-child(3) {
-  --z-offset: 25vh;
-}
-
-.stack:hover .card:nth-child(4),
-.stack:active .card:nth-child(4) {
-  --z-offset: 0vh;
-}
-
-.stack:hover .card:nth-child(5),
-.stack:active .card:nth-child(5) {
-  --z-offset: -25vh;
+  --z-offset: 5vh;
 }
 
 .stack:hover .card:nth-child(1)::after,
