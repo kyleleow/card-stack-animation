@@ -23,7 +23,9 @@
 }
 
 .stack:hover .card,
-.stack:active .card {
+.stack:active .card,
+.stack:hover .card:hover,
+.stack:active .card:active {
   --bg-opacity: 5%;
   transition-duration: 2s;
   transition-timing-function: var(--easeInOutCirc);
@@ -32,7 +34,9 @@
 }
 
 .stack:hover .card:nth-child(1),
-.stack:active .card:nth-child(1) {
+.stack:active .card:nth-child(1),
+.stack:hover .card:nth-child(1):hover,
+.stack:active .card:nth-child(1):active {
   --z-offset: 55vh;
 }
 
@@ -82,13 +86,17 @@
 }
 
 .stack:hover .card::after,
-.stack:active .card::after {
+.stack:active .card::after,
+.stack:hover .card:hover::after,
+.stack:active .card:active::after {
   opacity: 1;
   transform: rotate(-45deg) rotateY(45deg) translateX(0px);
 }
 
 .stack:hover .card.content,
-.stack:active .card.content {
+.stack:active .card.content,
+.stack:hover .card.content:hover,
+.stack:active .card.content:active {
   background: transparent;
   color: white;
   border-color: transparent;
