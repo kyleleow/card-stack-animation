@@ -2,6 +2,7 @@
   display: grid;
   grid: [stack] / [stack];
   perspective: 5000;
+  cursor: pointer;
 }
 
 .stack:before {
