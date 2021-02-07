@@ -3,6 +3,7 @@
   grid: [stack] / [stack];
   perspective: 5000;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .stack:before {
